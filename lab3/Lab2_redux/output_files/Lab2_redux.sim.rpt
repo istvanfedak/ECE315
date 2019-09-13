@@ -1,0 +1,357 @@
+Simulator report for Lab2_redux
+Thu Feb 16 18:04:47 2017
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 1.0 us       ;
+; Simulation Netlist Size     ; 164 nodes    ;
+; Simulation Coverage         ;      81.10 % ;
+; Total Number of Transitions ; 6061         ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Cyclone II   ;
++-----------------------------+--------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                                                                                 ;
++--------------------------------------------------------------------------------------------+-----------------------------------------------------------------------+---------------+
+; Option                                                                                     ; Setting                                                               ; Default Value ;
++--------------------------------------------------------------------------------------------+-----------------------------------------------------------------------+---------------+
+; Simulation mode                                                                            ; Functional                                                            ; Timing        ;
+; Start time                                                                                 ; 0 ns                                                                  ; 0 ns          ;
+; Simulation results format                                                                  ; VWF                                                                   ;               ;
+; Vector input source                                                                        ; C:/Users/ece315group10.DIGITALLAB/Desktop/Lab2_redux/4BitWaveform.vwf ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On                                                                    ; On            ;
+; Check outputs                                                                              ; Off                                                                   ; Off           ;
+; Report simulation coverage                                                                 ; On                                                                    ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On                                                                    ; On            ;
+; Display missing 1-value coverage report                                                    ; On                                                                    ; On            ;
+; Display missing 0-value coverage report                                                    ; On                                                                    ; On            ;
+; Detect setup and hold time violations                                                      ; Off                                                                   ; Off           ;
+; Detect glitches                                                                            ; Off                                                                   ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off                                                                   ; Off           ;
+; Generate Signal Activity File                                                              ; Off                                                                   ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off                                                                   ; Off           ;
+; Group bus channels in simulation results                                                   ; Off                                                                   ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On                                                                    ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE                                                            ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off                                                                   ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off                                                                   ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto                                                                  ; Auto          ;
++--------------------------------------------------------------------------------------------+-----------------------------------------------------------------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II 64-Bit to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      81.10 % ;
+; Total nodes checked                                 ; 164          ;
+; Total output ports checked                          ; 164          ;
+; Total output ports with complete 1/0-value coverage ; 133          ;
+; Total output ports with no 1/0-value coverage       ; 31           ;
+; Total output ports with no 1-value coverage         ; 31           ;
+; Total output ports with no 0-value coverage         ; 31           ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                                                                                                          ;
++-----------------------------------------------------------------+-----------------------------------------------------------------+------------------+
+; Node Name                                                       ; Output Port Name                                                ; Output Port Type ;
++-----------------------------------------------------------------+-----------------------------------------------------------------+------------------+
+; |Adder_Display|B0                                               ; |Adder_Display|B0                                               ; out              ;
+; |Adder_Display|B1                                               ; |Adder_Display|B1                                               ; out              ;
+; |Adder_Display|B2                                               ; |Adder_Display|B2                                               ; out              ;
+; |Adder_Display|B3                                               ; |Adder_Display|B3                                               ; out              ;
+; |Adder_Display|5H2                                              ; |Adder_Display|5H2                                              ; pin_out          ;
+; |Adder_Display|5H1                                              ; |Adder_Display|5H1                                              ; pin_out          ;
+; |Adder_Display|4H6                                              ; |Adder_Display|4H6                                              ; pin_out          ;
+; |Adder_Display|4H5                                              ; |Adder_Display|4H5                                              ; pin_out          ;
+; |Adder_Display|4H4                                              ; |Adder_Display|4H4                                              ; pin_out          ;
+; |Adder_Display|4H3                                              ; |Adder_Display|4H3                                              ; pin_out          ;
+; |Adder_Display|4H2                                              ; |Adder_Display|4H2                                              ; pin_out          ;
+; |Adder_Display|4H1                                              ; |Adder_Display|4H1                                              ; pin_out          ;
+; |Adder_Display|4H0                                              ; |Adder_Display|4H0                                              ; pin_out          ;
+; |Adder_Display|6H0                                              ; |Adder_Display|6H0                                              ; pin_out          ;
+; |Adder_Display|A0                                               ; |Adder_Display|A0                                               ; out              ;
+; |Adder_Display|A1                                               ; |Adder_Display|A1                                               ; out              ;
+; |Adder_Display|A2                                               ; |Adder_Display|A2                                               ; out              ;
+; |Adder_Display|A3                                               ; |Adder_Display|A3                                               ; out              ;
+; |Adder_Display|6H1                                              ; |Adder_Display|6H1                                              ; pin_out          ;
+; |Adder_Display|6H2                                              ; |Adder_Display|6H2                                              ; pin_out          ;
+; |Adder_Display|6H3                                              ; |Adder_Display|6H3                                              ; pin_out          ;
+; |Adder_Display|6H4                                              ; |Adder_Display|6H4                                              ; pin_out          ;
+; |Adder_Display|6H5                                              ; |Adder_Display|6H5                                              ; pin_out          ;
+; |Adder_Display|6H6                                              ; |Adder_Display|6H6                                              ; pin_out          ;
+; |Adder_Display|7H1                                              ; |Adder_Display|7H1                                              ; pin_out          ;
+; |Adder_Display|7H2                                              ; |Adder_Display|7H2                                              ; pin_out          ;
+; |Adder_Display|0H0                                              ; |Adder_Display|0H0                                              ; pin_out          ;
+; |Adder_Display|0H1                                              ; |Adder_Display|0H1                                              ; pin_out          ;
+; |Adder_Display|0H2                                              ; |Adder_Display|0H2                                              ; pin_out          ;
+; |Adder_Display|0H3                                              ; |Adder_Display|0H3                                              ; pin_out          ;
+; |Adder_Display|0H4                                              ; |Adder_Display|0H4                                              ; pin_out          ;
+; |Adder_Display|0H5                                              ; |Adder_Display|0H5                                              ; pin_out          ;
+; |Adder_Display|0H6                                              ; |Adder_Display|0H6                                              ; pin_out          ;
+; |Adder_Display|1H1                                              ; |Adder_Display|1H1                                              ; pin_out          ;
+; |Adder_Display|1H2                                              ; |Adder_Display|1H2                                              ; pin_out          ;
+; |Adder_Display|Q1                                               ; |Adder_Display|Q1                                               ; pin_out          ;
+; |Adder_Display|Q2                                               ; |Adder_Display|Q2                                               ; pin_out          ;
+; |Adder_Display|Q3                                               ; |Adder_Display|Q3                                               ; pin_out          ;
+; |Adder_Display|LED                                              ; |Adder_Display|LED                                              ; pin_out          ;
+; |Adder_Display|4Bit_Adder:inst|1Bit_Adder:inst|74153m:inst61|4  ; |Adder_Display|4Bit_Adder:inst|1Bit_Adder:inst|74153m:inst61|4  ; out0             ;
+; |Adder_Display|4Bit_Adder:inst|1Bit_Adder:inst1|74153m:inst61|9 ; |Adder_Display|4Bit_Adder:inst|1Bit_Adder:inst1|74153m:inst61|9 ; out0             ;
+; |Adder_Display|4Bit_Adder:inst|1Bit_Adder:inst1|74153m:inst61|4 ; |Adder_Display|4Bit_Adder:inst|1Bit_Adder:inst1|74153m:inst61|4 ; out0             ;
+; |Adder_Display|4Bit_Adder:inst|1Bit_Adder:inst1|74153m:inst60|9 ; |Adder_Display|4Bit_Adder:inst|1Bit_Adder:inst1|74153m:inst60|9 ; out0             ;
+; |Adder_Display|4Bit_Adder:inst|1Bit_Adder:inst1|74153m:inst60|1 ; |Adder_Display|4Bit_Adder:inst|1Bit_Adder:inst1|74153m:inst60|1 ; out0             ;
+; |Adder_Display|4Bit_Adder:inst|1Bit_Adder:inst1|74153m:inst60|4 ; |Adder_Display|4Bit_Adder:inst|1Bit_Adder:inst1|74153m:inst60|4 ; out0             ;
+; |Adder_Display|4Bit_Adder:inst|1Bit_Adder:inst2|74153m:inst61|9 ; |Adder_Display|4Bit_Adder:inst|1Bit_Adder:inst2|74153m:inst61|9 ; out0             ;
+; |Adder_Display|4Bit_Adder:inst|1Bit_Adder:inst2|74153m:inst61|2 ; |Adder_Display|4Bit_Adder:inst|1Bit_Adder:inst2|74153m:inst61|2 ; out0             ;
+; |Adder_Display|4Bit_Adder:inst|1Bit_Adder:inst2|74153m:inst61|3 ; |Adder_Display|4Bit_Adder:inst|1Bit_Adder:inst2|74153m:inst61|3 ; out0             ;
+; |Adder_Display|4Bit_Adder:inst|1Bit_Adder:inst2|74153m:inst61|4 ; |Adder_Display|4Bit_Adder:inst|1Bit_Adder:inst2|74153m:inst61|4 ; out0             ;
+; |Adder_Display|4Bit_Adder:inst|1Bit_Adder:inst2|74153m:inst60|9 ; |Adder_Display|4Bit_Adder:inst|1Bit_Adder:inst2|74153m:inst60|9 ; out0             ;
+; |Adder_Display|4Bit_Adder:inst|1Bit_Adder:inst2|74153m:inst60|1 ; |Adder_Display|4Bit_Adder:inst|1Bit_Adder:inst2|74153m:inst60|1 ; out0             ;
+; |Adder_Display|4Bit_Adder:inst|1Bit_Adder:inst2|74153m:inst60|2 ; |Adder_Display|4Bit_Adder:inst|1Bit_Adder:inst2|74153m:inst60|2 ; out0             ;
+; |Adder_Display|4Bit_Adder:inst|1Bit_Adder:inst2|74153m:inst60|3 ; |Adder_Display|4Bit_Adder:inst|1Bit_Adder:inst2|74153m:inst60|3 ; out0             ;
+; |Adder_Display|4Bit_Adder:inst|1Bit_Adder:inst2|74153m:inst60|4 ; |Adder_Display|4Bit_Adder:inst|1Bit_Adder:inst2|74153m:inst60|4 ; out0             ;
+; |Adder_Display|4Bit_Adder:inst|1Bit_Adder:inst3|74153m:inst61|9 ; |Adder_Display|4Bit_Adder:inst|1Bit_Adder:inst3|74153m:inst61|9 ; out0             ;
+; |Adder_Display|4Bit_Adder:inst|1Bit_Adder:inst3|74153m:inst61|2 ; |Adder_Display|4Bit_Adder:inst|1Bit_Adder:inst3|74153m:inst61|2 ; out0             ;
+; |Adder_Display|4Bit_Adder:inst|1Bit_Adder:inst3|74153m:inst61|3 ; |Adder_Display|4Bit_Adder:inst|1Bit_Adder:inst3|74153m:inst61|3 ; out0             ;
+; |Adder_Display|4Bit_Adder:inst|1Bit_Adder:inst3|74153m:inst61|4 ; |Adder_Display|4Bit_Adder:inst|1Bit_Adder:inst3|74153m:inst61|4 ; out0             ;
+; |Adder_Display|4Bit_Adder:inst|1Bit_Adder:inst3|74153m:inst60|9 ; |Adder_Display|4Bit_Adder:inst|1Bit_Adder:inst3|74153m:inst60|9 ; out0             ;
+; |Adder_Display|4Bit_Adder:inst|1Bit_Adder:inst3|74153m:inst60|1 ; |Adder_Display|4Bit_Adder:inst|1Bit_Adder:inst3|74153m:inst60|1 ; out0             ;
+; |Adder_Display|4Bit_Adder:inst|1Bit_Adder:inst3|74153m:inst60|2 ; |Adder_Display|4Bit_Adder:inst|1Bit_Adder:inst3|74153m:inst60|2 ; out0             ;
+; |Adder_Display|4Bit_Adder:inst|1Bit_Adder:inst3|74153m:inst60|3 ; |Adder_Display|4Bit_Adder:inst|1Bit_Adder:inst3|74153m:inst60|3 ; out0             ;
+; |Adder_Display|4Bit_Adder:inst|1Bit_Adder:inst3|74153m:inst60|4 ; |Adder_Display|4Bit_Adder:inst|1Bit_Adder:inst3|74153m:inst60|4 ; out0             ;
+; |Adder_Display|group10:inst3|inst57                             ; |Adder_Display|group10:inst3|inst57                             ; out0             ;
+; |Adder_Display|group10:inst3|inst29                             ; |Adder_Display|group10:inst3|inst29                             ; out0             ;
+; |Adder_Display|group10:inst3|inst27                             ; |Adder_Display|group10:inst3|inst27                             ; out0             ;
+; |Adder_Display|group10:inst3|inst25                             ; |Adder_Display|group10:inst3|inst25                             ; out0             ;
+; |Adder_Display|group10:inst3|inst47                             ; |Adder_Display|group10:inst3|inst47                             ; out0             ;
+; |Adder_Display|group10:inst3|inst23                             ; |Adder_Display|group10:inst3|inst23                             ; out0             ;
+; |Adder_Display|group10:inst3|inst21                             ; |Adder_Display|group10:inst3|inst21                             ; out0             ;
+; |Adder_Display|group10:inst3|inst17                             ; |Adder_Display|group10:inst3|inst17                             ; out0             ;
+; |Adder_Display|group10:inst3|inst15                             ; |Adder_Display|group10:inst3|inst15                             ; out0             ;
+; |Adder_Display|group10:inst3|inst46                             ; |Adder_Display|group10:inst3|inst46                             ; out0             ;
+; |Adder_Display|group10:inst3|inst45                             ; |Adder_Display|group10:inst3|inst45                             ; out0             ;
+; |Adder_Display|group10:inst3|inst19                             ; |Adder_Display|group10:inst3|inst19                             ; out0             ;
+; |Adder_Display|group10:inst3|inst49                             ; |Adder_Display|group10:inst3|inst49                             ; out0             ;
+; |Adder_Display|group10:inst3|inst48                             ; |Adder_Display|group10:inst3|inst48                             ; out0             ;
+; |Adder_Display|group10:inst3|inst50                             ; |Adder_Display|group10:inst3|inst50                             ; out0             ;
+; |Adder_Display|group10:inst3|inst52                             ; |Adder_Display|group10:inst3|inst52                             ; out0             ;
+; |Adder_Display|group10:inst3|inst54                             ; |Adder_Display|group10:inst3|inst54                             ; out0             ;
+; |Adder_Display|group10:inst3|inst56                             ; |Adder_Display|group10:inst3|inst56                             ; out0             ;
+; |Adder_Display|group10:inst1|inst57                             ; |Adder_Display|group10:inst1|inst57                             ; out0             ;
+; |Adder_Display|group10:inst1|inst30                             ; |Adder_Display|group10:inst1|inst30                             ; out0             ;
+; |Adder_Display|group10:inst1|inst28                             ; |Adder_Display|group10:inst1|inst28                             ; out0             ;
+; |Adder_Display|group10:inst1|inst29                             ; |Adder_Display|group10:inst1|inst29                             ; out0             ;
+; |Adder_Display|group10:inst1|inst27                             ; |Adder_Display|group10:inst1|inst27                             ; out0             ;
+; |Adder_Display|group10:inst1|inst26                             ; |Adder_Display|group10:inst1|inst26                             ; out0             ;
+; |Adder_Display|group10:inst1|inst25                             ; |Adder_Display|group10:inst1|inst25                             ; out0             ;
+; |Adder_Display|group10:inst1|inst47                             ; |Adder_Display|group10:inst1|inst47                             ; out0             ;
+; |Adder_Display|group10:inst1|inst23                             ; |Adder_Display|group10:inst1|inst23                             ; out0             ;
+; |Adder_Display|group10:inst1|inst24                             ; |Adder_Display|group10:inst1|inst24                             ; out0             ;
+; |Adder_Display|group10:inst1|inst21                             ; |Adder_Display|group10:inst1|inst21                             ; out0             ;
+; |Adder_Display|group10:inst1|inst22                             ; |Adder_Display|group10:inst1|inst22                             ; out0             ;
+; |Adder_Display|group10:inst1|inst20                             ; |Adder_Display|group10:inst1|inst20                             ; out0             ;
+; |Adder_Display|group10:inst1|inst17                             ; |Adder_Display|group10:inst1|inst17                             ; out0             ;
+; |Adder_Display|group10:inst1|inst18                             ; |Adder_Display|group10:inst1|inst18                             ; out0             ;
+; |Adder_Display|group10:inst1|inst15                             ; |Adder_Display|group10:inst1|inst15                             ; out0             ;
+; |Adder_Display|group10:inst1|inst46                             ; |Adder_Display|group10:inst1|inst46                             ; out0             ;
+; |Adder_Display|group10:inst1|inst45                             ; |Adder_Display|group10:inst1|inst45                             ; out0             ;
+; |Adder_Display|group10:inst1|inst19                             ; |Adder_Display|group10:inst1|inst19                             ; out0             ;
+; |Adder_Display|group10:inst1|inst16                             ; |Adder_Display|group10:inst1|inst16                             ; out0             ;
+; |Adder_Display|group10:inst1|inst49                             ; |Adder_Display|group10:inst1|inst49                             ; out0             ;
+; |Adder_Display|group10:inst1|inst48                             ; |Adder_Display|group10:inst1|inst48                             ; out0             ;
+; |Adder_Display|group10:inst1|inst50                             ; |Adder_Display|group10:inst1|inst50                             ; out0             ;
+; |Adder_Display|group10:inst1|inst52                             ; |Adder_Display|group10:inst1|inst52                             ; out0             ;
+; |Adder_Display|group10:inst1|inst54                             ; |Adder_Display|group10:inst1|inst54                             ; out0             ;
+; |Adder_Display|group10:inst1|inst56                             ; |Adder_Display|group10:inst1|inst56                             ; out0             ;
+; |Adder_Display|group10:inst2|inst57                             ; |Adder_Display|group10:inst2|inst57                             ; out0             ;
+; |Adder_Display|group10:inst2|inst30                             ; |Adder_Display|group10:inst2|inst30                             ; out0             ;
+; |Adder_Display|group10:inst2|inst28                             ; |Adder_Display|group10:inst2|inst28                             ; out0             ;
+; |Adder_Display|group10:inst2|inst29                             ; |Adder_Display|group10:inst2|inst29                             ; out0             ;
+; |Adder_Display|group10:inst2|inst27                             ; |Adder_Display|group10:inst2|inst27                             ; out0             ;
+; |Adder_Display|group10:inst2|inst26                             ; |Adder_Display|group10:inst2|inst26                             ; out0             ;
+; |Adder_Display|group10:inst2|inst25                             ; |Adder_Display|group10:inst2|inst25                             ; out0             ;
+; |Adder_Display|group10:inst2|inst47                             ; |Adder_Display|group10:inst2|inst47                             ; out0             ;
+; |Adder_Display|group10:inst2|inst23                             ; |Adder_Display|group10:inst2|inst23                             ; out0             ;
+; |Adder_Display|group10:inst2|inst24                             ; |Adder_Display|group10:inst2|inst24                             ; out0             ;
+; |Adder_Display|group10:inst2|inst21                             ; |Adder_Display|group10:inst2|inst21                             ; out0             ;
+; |Adder_Display|group10:inst2|inst22                             ; |Adder_Display|group10:inst2|inst22                             ; out0             ;
+; |Adder_Display|group10:inst2|inst20                             ; |Adder_Display|group10:inst2|inst20                             ; out0             ;
+; |Adder_Display|group10:inst2|inst17                             ; |Adder_Display|group10:inst2|inst17                             ; out0             ;
+; |Adder_Display|group10:inst2|inst18                             ; |Adder_Display|group10:inst2|inst18                             ; out0             ;
+; |Adder_Display|group10:inst2|inst15                             ; |Adder_Display|group10:inst2|inst15                             ; out0             ;
+; |Adder_Display|group10:inst2|inst46                             ; |Adder_Display|group10:inst2|inst46                             ; out0             ;
+; |Adder_Display|group10:inst2|inst45                             ; |Adder_Display|group10:inst2|inst45                             ; out0             ;
+; |Adder_Display|group10:inst2|inst19                             ; |Adder_Display|group10:inst2|inst19                             ; out0             ;
+; |Adder_Display|group10:inst2|inst16                             ; |Adder_Display|group10:inst2|inst16                             ; out0             ;
+; |Adder_Display|group10:inst2|inst49                             ; |Adder_Display|group10:inst2|inst49                             ; out0             ;
+; |Adder_Display|group10:inst2|inst48                             ; |Adder_Display|group10:inst2|inst48                             ; out0             ;
+; |Adder_Display|group10:inst2|inst50                             ; |Adder_Display|group10:inst2|inst50                             ; out0             ;
+; |Adder_Display|group10:inst2|inst52                             ; |Adder_Display|group10:inst2|inst52                             ; out0             ;
+; |Adder_Display|group10:inst2|inst54                             ; |Adder_Display|group10:inst2|inst54                             ; out0             ;
+; |Adder_Display|group10:inst2|inst56                             ; |Adder_Display|group10:inst2|inst56                             ; out0             ;
++-----------------------------------------------------------------+-----------------------------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Missing 1-Value Coverage                                                                                                                             ;
++-----------------------------------------------------------------+-----------------------------------------------------------------+------------------+
+; Node Name                                                       ; Output Port Name                                                ; Output Port Type ;
++-----------------------------------------------------------------+-----------------------------------------------------------------+------------------+
+; |Adder_Display|5H6                                              ; |Adder_Display|5H6                                              ; pin_out          ;
+; |Adder_Display|5H5                                              ; |Adder_Display|5H5                                              ; pin_out          ;
+; |Adder_Display|5H3                                              ; |Adder_Display|5H3                                              ; pin_out          ;
+; |Adder_Display|5H0                                              ; |Adder_Display|5H0                                              ; pin_out          ;
+; |Adder_Display|5H4                                              ; |Adder_Display|5H4                                              ; pin_out          ;
+; |Adder_Display|7H0                                              ; |Adder_Display|7H0                                              ; pin_out          ;
+; |Adder_Display|7H3                                              ; |Adder_Display|7H3                                              ; pin_out          ;
+; |Adder_Display|7H4                                              ; |Adder_Display|7H4                                              ; pin_out          ;
+; |Adder_Display|7H5                                              ; |Adder_Display|7H5                                              ; pin_out          ;
+; |Adder_Display|7H6                                              ; |Adder_Display|7H6                                              ; pin_out          ;
+; |Adder_Display|1H0                                              ; |Adder_Display|1H0                                              ; pin_out          ;
+; |Adder_Display|1H3                                              ; |Adder_Display|1H3                                              ; pin_out          ;
+; |Adder_Display|1H4                                              ; |Adder_Display|1H4                                              ; pin_out          ;
+; |Adder_Display|1H5                                              ; |Adder_Display|1H5                                              ; pin_out          ;
+; |Adder_Display|1H6                                              ; |Adder_Display|1H6                                              ; pin_out          ;
+; |Adder_Display|Q0                                               ; |Adder_Display|Q0                                               ; pin_out          ;
+; |Adder_Display|4Bit_Adder:inst|1Bit_Adder:inst|74153m:inst60|9  ; |Adder_Display|4Bit_Adder:inst|1Bit_Adder:inst|74153m:inst60|9  ; out0             ;
+; |Adder_Display|4Bit_Adder:inst|1Bit_Adder:inst|74153m:inst60|2  ; |Adder_Display|4Bit_Adder:inst|1Bit_Adder:inst|74153m:inst60|2  ; out0             ;
+; |Adder_Display|4Bit_Adder:inst|1Bit_Adder:inst|74153m:inst60|3  ; |Adder_Display|4Bit_Adder:inst|1Bit_Adder:inst|74153m:inst60|3  ; out0             ;
+; |Adder_Display|4Bit_Adder:inst|1Bit_Adder:inst1|74153m:inst61|2 ; |Adder_Display|4Bit_Adder:inst|1Bit_Adder:inst1|74153m:inst61|2 ; out0             ;
+; |Adder_Display|4Bit_Adder:inst|1Bit_Adder:inst1|74153m:inst61|3 ; |Adder_Display|4Bit_Adder:inst|1Bit_Adder:inst1|74153m:inst61|3 ; out0             ;
+; |Adder_Display|4Bit_Adder:inst|1Bit_Adder:inst1|74153m:inst60|2 ; |Adder_Display|4Bit_Adder:inst|1Bit_Adder:inst1|74153m:inst60|2 ; out0             ;
+; |Adder_Display|4Bit_Adder:inst|1Bit_Adder:inst1|74153m:inst60|3 ; |Adder_Display|4Bit_Adder:inst|1Bit_Adder:inst1|74153m:inst60|3 ; out0             ;
+; |Adder_Display|group10:inst3|inst30                             ; |Adder_Display|group10:inst3|inst30                             ; out0             ;
+; |Adder_Display|group10:inst3|inst28                             ; |Adder_Display|group10:inst3|inst28                             ; out0             ;
+; |Adder_Display|group10:inst3|inst26                             ; |Adder_Display|group10:inst3|inst26                             ; out0             ;
+; |Adder_Display|group10:inst3|inst24                             ; |Adder_Display|group10:inst3|inst24                             ; out0             ;
+; |Adder_Display|group10:inst3|inst22                             ; |Adder_Display|group10:inst3|inst22                             ; out0             ;
+; |Adder_Display|group10:inst3|inst20                             ; |Adder_Display|group10:inst3|inst20                             ; out0             ;
+; |Adder_Display|group10:inst3|inst18                             ; |Adder_Display|group10:inst3|inst18                             ; out0             ;
+; |Adder_Display|group10:inst3|inst16                             ; |Adder_Display|group10:inst3|inst16                             ; out0             ;
++-----------------------------------------------------------------+-----------------------------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Missing 0-Value Coverage                                                                                                                             ;
++-----------------------------------------------------------------+-----------------------------------------------------------------+------------------+
+; Node Name                                                       ; Output Port Name                                                ; Output Port Type ;
++-----------------------------------------------------------------+-----------------------------------------------------------------+------------------+
+; |Adder_Display|5H6                                              ; |Adder_Display|5H6                                              ; pin_out          ;
+; |Adder_Display|5H5                                              ; |Adder_Display|5H5                                              ; pin_out          ;
+; |Adder_Display|5H3                                              ; |Adder_Display|5H3                                              ; pin_out          ;
+; |Adder_Display|5H0                                              ; |Adder_Display|5H0                                              ; pin_out          ;
+; |Adder_Display|5H4                                              ; |Adder_Display|5H4                                              ; pin_out          ;
+; |Adder_Display|7H0                                              ; |Adder_Display|7H0                                              ; pin_out          ;
+; |Adder_Display|7H3                                              ; |Adder_Display|7H3                                              ; pin_out          ;
+; |Adder_Display|7H4                                              ; |Adder_Display|7H4                                              ; pin_out          ;
+; |Adder_Display|7H5                                              ; |Adder_Display|7H5                                              ; pin_out          ;
+; |Adder_Display|7H6                                              ; |Adder_Display|7H6                                              ; pin_out          ;
+; |Adder_Display|1H0                                              ; |Adder_Display|1H0                                              ; pin_out          ;
+; |Adder_Display|1H3                                              ; |Adder_Display|1H3                                              ; pin_out          ;
+; |Adder_Display|1H4                                              ; |Adder_Display|1H4                                              ; pin_out          ;
+; |Adder_Display|1H5                                              ; |Adder_Display|1H5                                              ; pin_out          ;
+; |Adder_Display|1H6                                              ; |Adder_Display|1H6                                              ; pin_out          ;
+; |Adder_Display|Q0                                               ; |Adder_Display|Q0                                               ; pin_out          ;
+; |Adder_Display|4Bit_Adder:inst|1Bit_Adder:inst|74153m:inst60|9  ; |Adder_Display|4Bit_Adder:inst|1Bit_Adder:inst|74153m:inst60|9  ; out0             ;
+; |Adder_Display|4Bit_Adder:inst|1Bit_Adder:inst|74153m:inst60|2  ; |Adder_Display|4Bit_Adder:inst|1Bit_Adder:inst|74153m:inst60|2  ; out0             ;
+; |Adder_Display|4Bit_Adder:inst|1Bit_Adder:inst|74153m:inst60|3  ; |Adder_Display|4Bit_Adder:inst|1Bit_Adder:inst|74153m:inst60|3  ; out0             ;
+; |Adder_Display|4Bit_Adder:inst|1Bit_Adder:inst1|74153m:inst61|2 ; |Adder_Display|4Bit_Adder:inst|1Bit_Adder:inst1|74153m:inst61|2 ; out0             ;
+; |Adder_Display|4Bit_Adder:inst|1Bit_Adder:inst1|74153m:inst61|3 ; |Adder_Display|4Bit_Adder:inst|1Bit_Adder:inst1|74153m:inst61|3 ; out0             ;
+; |Adder_Display|4Bit_Adder:inst|1Bit_Adder:inst1|74153m:inst60|2 ; |Adder_Display|4Bit_Adder:inst|1Bit_Adder:inst1|74153m:inst60|2 ; out0             ;
+; |Adder_Display|4Bit_Adder:inst|1Bit_Adder:inst1|74153m:inst60|3 ; |Adder_Display|4Bit_Adder:inst|1Bit_Adder:inst1|74153m:inst60|3 ; out0             ;
+; |Adder_Display|group10:inst3|inst30                             ; |Adder_Display|group10:inst3|inst30                             ; out0             ;
+; |Adder_Display|group10:inst3|inst28                             ; |Adder_Display|group10:inst3|inst28                             ; out0             ;
+; |Adder_Display|group10:inst3|inst26                             ; |Adder_Display|group10:inst3|inst26                             ; out0             ;
+; |Adder_Display|group10:inst3|inst24                             ; |Adder_Display|group10:inst3|inst24                             ; out0             ;
+; |Adder_Display|group10:inst3|inst22                             ; |Adder_Display|group10:inst3|inst22                             ; out0             ;
+; |Adder_Display|group10:inst3|inst20                             ; |Adder_Display|group10:inst3|inst20                             ; out0             ;
+; |Adder_Display|group10:inst3|inst18                             ; |Adder_Display|group10:inst3|inst18                             ; out0             ;
+; |Adder_Display|group10:inst3|inst16                             ; |Adder_Display|group10:inst3|inst16                             ; out0             ;
++-----------------------------------------------------------------+-----------------------------------------------------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit Simulator
+    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
+    Info: Processing started: Thu Feb 16 18:04:46 2017
+Info: Command: quartus_sim --simulation_results_format=VWF Lab2_redux -c Lab2_redux
+Info (324025): Using vector source file "C:/Users/ece315group10.DIGITALLAB/Desktop/Lab2_redux/4BitWaveform.vwf"
+Info (310003): Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info (310004): Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info (310002): Simulation partitioned into 1 sub-simulations
+Info (328053): Simulation coverage is      81.10 %
+Info (328052): Number of transitions in simulation is 6061
+Info (324045): Vector file Lab2_redux.sim.vwf is saved in VWF text format. You can compress it into CVWF format in order to reduce file size. For more details please refer to the Quartus II Help.
+Info: Quartus II 64-Bit Simulator was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 319 megabytes
+    Info: Processing ended: Thu Feb 16 18:04:47 2017
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:00
+
+

@@ -1,0 +1,386 @@
+|Adder_Display
+5H6 <= group10:inst2.d13
+B0 => group10:inst2.D
+B0 => 4Bit_Adder:inst.B0
+B1 => group10:inst2.C
+B1 => 4Bit_Adder:inst.B1
+B2 => group10:inst2.B
+B2 => 4Bit_Adder:inst.B2
+B3 => group10:inst2.A
+B3 => 4Bit_Adder:inst.B3
+5H5 <= group10:inst2.d12
+5H3 <= group10:inst2.d10
+5H2 <= group10:inst2.d9
+5H1 <= group10:inst2.d8
+5H0 <= group10:inst2.d7
+5H4 <= group10:inst2.d11
+4H6 <= group10:inst2.d6
+4H5 <= group10:inst2.d5
+4H4 <= group10:inst2.d4
+4H3 <= group10:inst2.d3
+4H2 <= group10:inst2.d2
+4H1 <= group10:inst2.d1
+4H0 <= group10:inst2.d0
+6H0 <= group10:inst1.d0
+A0 => group10:inst1.D
+A0 => 4Bit_Adder:inst.A0
+A1 => group10:inst1.C
+A1 => 4Bit_Adder:inst.A1
+A2 => group10:inst1.B
+A2 => 4Bit_Adder:inst.A2
+A3 => group10:inst1.A
+A3 => 4Bit_Adder:inst.A3
+6H1 <= group10:inst1.d1
+6H2 <= group10:inst1.d2
+6H3 <= group10:inst1.d3
+6H4 <= group10:inst1.d4
+6H5 <= group10:inst1.d5
+6H6 <= group10:inst1.d6
+7H0 <= group10:inst1.d7
+7H1 <= group10:inst1.d8
+7H2 <= group10:inst1.d9
+7H3 <= group10:inst1.d10
+7H4 <= group10:inst1.d11
+7H5 <= group10:inst1.d12
+7H6 <= group10:inst1.d13
+0H0 <= group10:inst3.d0
+0H1 <= group10:inst3.d1
+0H2 <= group10:inst3.d2
+0H3 <= group10:inst3.d3
+0H4 <= group10:inst3.d4
+0H5 <= group10:inst3.d5
+0H6 <= group10:inst3.d6
+1H0 <= group10:inst3.d7
+1H1 <= group10:inst3.d8
+1H2 <= group10:inst3.d9
+1H3 <= group10:inst3.d10
+1H4 <= group10:inst3.d11
+1H5 <= group10:inst3.d12
+1H6 <= group10:inst3.d13
+Q0 <= 4Bit_Adder:inst.Q0
+Q1 <= 4Bit_Adder:inst.Q1
+Q2 <= 4Bit_Adder:inst.Q2
+Q3 <= 4Bit_Adder:inst.Q3
+LED <= 4Bit_Adder:inst.LED
+
+
+|Adder_Display|group10:inst2
+d7 <= inst37.DB_MAX_OUTPUT_PORT_TYPE
+d8 <= inst36.DB_MAX_OUTPUT_PORT_TYPE
+A => inst30.IN0
+A => inst28.IN0
+A => inst29.IN0
+A => inst27.IN0
+A => inst26.IN0
+A => inst25.IN0
+A => inst23.IN0
+A => inst24.IN0
+A => inst11.IN0
+B => inst30.IN1
+B => inst28.IN1
+B => inst29.IN1
+B => inst27.IN1
+B => inst12.IN0
+B => inst21.IN1
+B => inst22.IN1
+B => inst20.IN1
+B => inst19.IN1
+C => inst30.IN2
+C => inst13.IN0
+C => inst29.IN2
+C => inst26.IN2
+C => inst25.IN2
+C => inst21.IN2
+C => inst22.IN2
+C => inst17.IN2
+C => inst18.IN2
+D => inst30.IN3
+D => inst28.IN3
+D => inst14.IN0
+D => inst26.IN3
+D => inst24.IN3
+D => inst22.IN3
+D => inst20.IN3
+D => inst18.IN3
+D => inst16.IN3
+d9 <= inst35.DB_MAX_OUTPUT_PORT_TYPE
+d10 <= inst34.DB_MAX_OUTPUT_PORT_TYPE
+d11 <= inst33.DB_MAX_OUTPUT_PORT_TYPE
+d12 <= inst32.DB_MAX_OUTPUT_PORT_TYPE
+d13 <= inst31.DB_MAX_OUTPUT_PORT_TYPE
+d0 <= inst44.DB_MAX_OUTPUT_PORT_TYPE
+d1 <= inst43.DB_MAX_OUTPUT_PORT_TYPE
+d2 <= inst42.DB_MAX_OUTPUT_PORT_TYPE
+d3 <= inst41.DB_MAX_OUTPUT_PORT_TYPE
+d4 <= inst40.DB_MAX_OUTPUT_PORT_TYPE
+d5 <= inst39.DB_MAX_OUTPUT_PORT_TYPE
+d6 <= inst38.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Adder_Display|group10:inst1
+d7 <= inst37.DB_MAX_OUTPUT_PORT_TYPE
+d8 <= inst36.DB_MAX_OUTPUT_PORT_TYPE
+A => inst30.IN0
+A => inst28.IN0
+A => inst29.IN0
+A => inst27.IN0
+A => inst26.IN0
+A => inst25.IN0
+A => inst23.IN0
+A => inst24.IN0
+A => inst11.IN0
+B => inst30.IN1
+B => inst28.IN1
+B => inst29.IN1
+B => inst27.IN1
+B => inst12.IN0
+B => inst21.IN1
+B => inst22.IN1
+B => inst20.IN1
+B => inst19.IN1
+C => inst30.IN2
+C => inst13.IN0
+C => inst29.IN2
+C => inst26.IN2
+C => inst25.IN2
+C => inst21.IN2
+C => inst22.IN2
+C => inst17.IN2
+C => inst18.IN2
+D => inst30.IN3
+D => inst28.IN3
+D => inst14.IN0
+D => inst26.IN3
+D => inst24.IN3
+D => inst22.IN3
+D => inst20.IN3
+D => inst18.IN3
+D => inst16.IN3
+d9 <= inst35.DB_MAX_OUTPUT_PORT_TYPE
+d10 <= inst34.DB_MAX_OUTPUT_PORT_TYPE
+d11 <= inst33.DB_MAX_OUTPUT_PORT_TYPE
+d12 <= inst32.DB_MAX_OUTPUT_PORT_TYPE
+d13 <= inst31.DB_MAX_OUTPUT_PORT_TYPE
+d0 <= inst44.DB_MAX_OUTPUT_PORT_TYPE
+d1 <= inst43.DB_MAX_OUTPUT_PORT_TYPE
+d2 <= inst42.DB_MAX_OUTPUT_PORT_TYPE
+d3 <= inst41.DB_MAX_OUTPUT_PORT_TYPE
+d4 <= inst40.DB_MAX_OUTPUT_PORT_TYPE
+d5 <= inst39.DB_MAX_OUTPUT_PORT_TYPE
+d6 <= inst38.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Adder_Display|group10:inst3
+d7 <= inst37.DB_MAX_OUTPUT_PORT_TYPE
+d8 <= inst36.DB_MAX_OUTPUT_PORT_TYPE
+A => inst30.IN0
+A => inst28.IN0
+A => inst29.IN0
+A => inst27.IN0
+A => inst26.IN0
+A => inst25.IN0
+A => inst23.IN0
+A => inst24.IN0
+A => inst11.IN0
+B => inst30.IN1
+B => inst28.IN1
+B => inst29.IN1
+B => inst27.IN1
+B => inst12.IN0
+B => inst21.IN1
+B => inst22.IN1
+B => inst20.IN1
+B => inst19.IN1
+C => inst30.IN2
+C => inst13.IN0
+C => inst29.IN2
+C => inst26.IN2
+C => inst25.IN2
+C => inst21.IN2
+C => inst22.IN2
+C => inst17.IN2
+C => inst18.IN2
+D => inst30.IN3
+D => inst28.IN3
+D => inst14.IN0
+D => inst26.IN3
+D => inst24.IN3
+D => inst22.IN3
+D => inst20.IN3
+D => inst18.IN3
+D => inst16.IN3
+d9 <= inst35.DB_MAX_OUTPUT_PORT_TYPE
+d10 <= inst34.DB_MAX_OUTPUT_PORT_TYPE
+d11 <= inst33.DB_MAX_OUTPUT_PORT_TYPE
+d12 <= inst32.DB_MAX_OUTPUT_PORT_TYPE
+d13 <= inst31.DB_MAX_OUTPUT_PORT_TYPE
+d0 <= inst44.DB_MAX_OUTPUT_PORT_TYPE
+d1 <= inst43.DB_MAX_OUTPUT_PORT_TYPE
+d2 <= inst42.DB_MAX_OUTPUT_PORT_TYPE
+d3 <= inst41.DB_MAX_OUTPUT_PORT_TYPE
+d4 <= inst40.DB_MAX_OUTPUT_PORT_TYPE
+d5 <= inst39.DB_MAX_OUTPUT_PORT_TYPE
+d6 <= inst38.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Adder_Display|4Bit_Adder:inst
+LED <= 1Bit_Adder:inst3.Cout
+Cin => 1Bit_Adder:inst.Cin
+B0 => 1Bit_Adder:inst.B
+A0 => 1Bit_Adder:inst.A
+B1 => 1Bit_Adder:inst1.B
+A1 => 1Bit_Adder:inst1.A
+B2 => 1Bit_Adder:inst2.B
+A2 => 1Bit_Adder:inst2.A
+B3 => 1Bit_Adder:inst3.B
+A3 => 1Bit_Adder:inst3.A
+Q3 <= 1Bit_Adder:inst3.Sum
+Q2 <= 1Bit_Adder:inst2.Sum
+Q1 <= 1Bit_Adder:inst1.Sum
+Q0 <= 1Bit_Adder:inst.Sum
+
+
+|Adder_Display|4Bit_Adder:inst|1Bit_Adder:inst3
+Sum <= 74153M:inst60.Y
+A => 74153M:inst60.A
+A => 74153M:inst61.A
+B => 74153M:inst60.B
+B => 74153M:inst61.B
+Cin => 74153M:inst60.C3
+Cin => inst2.IN0
+Cin => 74153M:inst60.C0
+Cin => 74153M:inst61.C2
+Cin => 74153M:inst61.C1
+Cout <= 74153M:inst61.Y
+
+
+|Adder_Display|4Bit_Adder:inst|1Bit_Adder:inst3|74153M:inst60
+Y <= 9.DB_MAX_OUTPUT_PORT_TYPE
+GN => 26.IN0
+B => 27.IN0
+A => 29.IN0
+C0 => 1.IN3
+C1 => 2.IN3
+C2 => 3.IN3
+C3 => 4.IN3
+
+
+|Adder_Display|4Bit_Adder:inst|1Bit_Adder:inst3|74153M:inst61
+Y <= 9.DB_MAX_OUTPUT_PORT_TYPE
+GN => 26.IN0
+B => 27.IN0
+A => 29.IN0
+C0 => 1.IN3
+C1 => 2.IN3
+C2 => 3.IN3
+C3 => 4.IN3
+
+
+|Adder_Display|4Bit_Adder:inst|1Bit_Adder:inst2
+Sum <= 74153M:inst60.Y
+A => 74153M:inst60.A
+A => 74153M:inst61.A
+B => 74153M:inst60.B
+B => 74153M:inst61.B
+Cin => 74153M:inst60.C3
+Cin => inst2.IN0
+Cin => 74153M:inst60.C0
+Cin => 74153M:inst61.C2
+Cin => 74153M:inst61.C1
+Cout <= 74153M:inst61.Y
+
+
+|Adder_Display|4Bit_Adder:inst|1Bit_Adder:inst2|74153M:inst60
+Y <= 9.DB_MAX_OUTPUT_PORT_TYPE
+GN => 26.IN0
+B => 27.IN0
+A => 29.IN0
+C0 => 1.IN3
+C1 => 2.IN3
+C2 => 3.IN3
+C3 => 4.IN3
+
+
+|Adder_Display|4Bit_Adder:inst|1Bit_Adder:inst2|74153M:inst61
+Y <= 9.DB_MAX_OUTPUT_PORT_TYPE
+GN => 26.IN0
+B => 27.IN0
+A => 29.IN0
+C0 => 1.IN3
+C1 => 2.IN3
+C2 => 3.IN3
+C3 => 4.IN3
+
+
+|Adder_Display|4Bit_Adder:inst|1Bit_Adder:inst1
+Sum <= 74153M:inst60.Y
+A => 74153M:inst60.A
+A => 74153M:inst61.A
+B => 74153M:inst60.B
+B => 74153M:inst61.B
+Cin => 74153M:inst60.C3
+Cin => inst2.IN0
+Cin => 74153M:inst60.C0
+Cin => 74153M:inst61.C2
+Cin => 74153M:inst61.C1
+Cout <= 74153M:inst61.Y
+
+
+|Adder_Display|4Bit_Adder:inst|1Bit_Adder:inst1|74153M:inst60
+Y <= 9.DB_MAX_OUTPUT_PORT_TYPE
+GN => 26.IN0
+B => 27.IN0
+A => 29.IN0
+C0 => 1.IN3
+C1 => 2.IN3
+C2 => 3.IN3
+C3 => 4.IN3
+
+
+|Adder_Display|4Bit_Adder:inst|1Bit_Adder:inst1|74153M:inst61
+Y <= 9.DB_MAX_OUTPUT_PORT_TYPE
+GN => 26.IN0
+B => 27.IN0
+A => 29.IN0
+C0 => 1.IN3
+C1 => 2.IN3
+C2 => 3.IN3
+C3 => 4.IN3
+
+
+|Adder_Display|4Bit_Adder:inst|1Bit_Adder:inst
+Sum <= 74153M:inst60.Y
+A => 74153M:inst60.A
+A => 74153M:inst61.A
+B => 74153M:inst60.B
+B => 74153M:inst61.B
+Cin => 74153M:inst60.C3
+Cin => inst2.IN0
+Cin => 74153M:inst60.C0
+Cin => 74153M:inst61.C2
+Cin => 74153M:inst61.C1
+Cout <= 74153M:inst61.Y
+
+
+|Adder_Display|4Bit_Adder:inst|1Bit_Adder:inst|74153M:inst60
+Y <= 9.DB_MAX_OUTPUT_PORT_TYPE
+GN => 26.IN0
+B => 27.IN0
+A => 29.IN0
+C0 => 1.IN3
+C1 => 2.IN3
+C2 => 3.IN3
+C3 => 4.IN3
+
+
+|Adder_Display|4Bit_Adder:inst|1Bit_Adder:inst|74153M:inst61
+Y <= 9.DB_MAX_OUTPUT_PORT_TYPE
+GN => 26.IN0
+B => 27.IN0
+A => 29.IN0
+C0 => 1.IN3
+C1 => 2.IN3
+C2 => 3.IN3
+C3 => 4.IN3
+
+

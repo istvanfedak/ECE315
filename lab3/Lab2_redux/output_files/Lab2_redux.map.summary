@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Thu Feb 16 18:57:40 2017
+Quartus II 64-Bit Version : 13.0.1 Build 232 06/12/2013 SP 1 SJ Full Version
+Revision Name : Lab2_redux
+Top-level Entity Name : Adder_Display
+Family : Cyclone II
+Total logic elements : 29
+    Total combinational functions : 29
+    Dedicated logic registers : 0
+Total registers : 0
+Total pins : 55
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

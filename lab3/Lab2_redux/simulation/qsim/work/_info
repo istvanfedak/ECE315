@@ -1,0 +1,45 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\ece315group10.DIGITALLAB\Desktop\Lab2_redux\simulation\qsim
+vAdder_Display
+Z1 !s100 ni=zW^PYoC=3[4f?`M:Vd0
+Z2 IjLWZZ`ak6UfZ26R6fXak70
+Z3 VcPl:UHM4HKSJkB4X<f?:E1
+Z4 dC:\Users\ece315group10.DIGITALLAB\Desktop\Lab2_redux\simulation\qsim
+Z5 w1487286273
+Z6 8Lab2_redux.vo
+Z7 FLab2_redux.vo
+L0 31
+Z8 OV;L;10.1d;51
+r1
+31
+Z9 !s90 -work|work|Lab2_redux.vo|
+Z10 o-work work -O0
+Z11 n@adder_@display
+!i10b 1
+!s85 0
+Z12 !s108 1487286273.957000
+Z13 !s107 Lab2_redux.vo|
+!s101 -O0
+vAdder_Display_vlg_sample_tst
+!i10b 1
+Z14 !s100 ]^mFiPE`zX17OKUmb]Qi92
+Z15 IzbL6Zc9cU;Yd;AWk2N;dZ0
+Z16 VEd1o=WGNb^6R]71PM?2z@0
+R4
+w1487286272
+Z17 8Lab2_redux.vt
+Z18 FLab2_redux.vt
+L0 29
+R8
+r1
+!s85 0
+31
+!s108 1487286274.035000
+!s107 Lab2_redux.vt|
+Z19 !s90 -work|work|Lab2_redux.vt|
+!s101 -O0
+R10
+Z20 n@adder_@display_vlg_sample_tst
